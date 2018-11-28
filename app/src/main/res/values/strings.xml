@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Conexión con MongoDB</string>
+    <string name="registerNewDoc">Registrar Documento</string>
+    <string name="todo">TODO</string>
+    <string name="registerStudent">Registro de Alumnos</string>
+    <string name="studentName">Nombre del Alumno</string>
+    <string name="career">Carrera</string>
+    <string name="studentLastName">Apellidos del Alumno</string>
+    <string name="studentAge">Edad</string>
+    <string name="register">Registrar</string>
+    <string name="serverIP">IP del Servidor</string>
+    <string name="setIP">Asignar IP</string>
+</resources>

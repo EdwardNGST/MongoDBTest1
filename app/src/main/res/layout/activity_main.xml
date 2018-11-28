@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtIP"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/serverIP"
+            android:layout_toStartOf="@+id/btnSetIP"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/btnSetIP"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/setIP"/>
+
+        <ImageView
+            android:id="@+id/imgMongo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@string/todo"
+            android:layout_below="@+id/txtIP"
+            android:src="@drawable/mongo"/>
+
+        <TextView
+            android:id="@+id/lblRegisterStudent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:text="@string/registerStudent"
+            android:layout_below="@+id/imgMongo"/>
+
+        <EditText
+            android:id="@+id/txtName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentName"
+            android:layout_below="@id/lblRegisterStudent"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentLastName"
+            android:layout_below="@id/txtName"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtCareer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/career"
+            android:layout_below="@id/txtLastName"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtStudentAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/studentAge"
+            android:layout_below="@id/txtCareer"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtStudentAge"
+            android:text="@string/register"
+            android:onClick="registerNewDoc"/>
+
+    </RelativeLayout>
+
+</ScrollView>
